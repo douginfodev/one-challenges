@@ -15,64 +15,70 @@
     <div class="container">
 
         <main>
-          <section>
-            <header-section>
-                <div class="brand">
-                    <a href="index.html">
-                        <h1 class="logo">ALURA</h1>
-                    </a>
-                </div>
-                <div class="titulo">
-                    <h1>ENCRIPTADOR / DESCRIPTADOR DE TEXTOS</h1>
-                </div>
-            </header-section>
+            <section>
+                <header-section>
+                    <div class="brand">
+                        <a href="index.html">
+                            <h1 class="logo">ALURA</h1>
+                        </a>
+                    </div>
+                    <div class="titulo">
+                        <h1>ENCRIPTADOR / DESCRIPTADOR DE TEXTOS</h1>
+                    </div>
+                </header-section>
 
-            <section-main>
-                <textarea id="textareainfo" placeholder="Digite seu texto para encriptografar ou descriptografar" rows="23" cols="115" value=""></textarea>
-            </section-main>
+                <section-main>
+                    <textarea id="textareainfo" placeholder="Digite seu texto para encriptografar ou descriptografar"
+                        rows="20" cols="110" value="" autofocus></textarea>
+                </section-main>
 
-            <footer-section>
-                <button onclick="checkText('E')">Criptografar</button>
-                <button class="btn-unchecked" onclick="checkText('D')">Descriptografar</button>
-            </footer-section>
-           </section>
+                <footer-section>
+                    <button onclick="checkText('E')">Criptografar</button>
+                    <button class="btn-unchecked" onclick="checkText('D')">Descriptografar</button>
+                </footer-section>
+            </section>
 
             <aside id="aside">
-             <div id="aside-text">
-             </div>   
-             <div id="aside-center">  
-              <img src="assets/img/Hqprodutos.png" alt=""/>  
-              <h2 class="asideh2">Nenhuma mensagem encontrada.</h2> 
-              <p>Digite o texto que você deseja<br>criptografar ou descriptografar.</p> 
-            </div>
+                <div id="aside-text">
+                </div>
+                <div id="aside-center">
+                    <img src="assets/img/Hqprodutos.png" alt="" />
+                    <h2 class="asideh2">Nenhuma mensagem encontrada.</h2>
+                    <p>Digite o texto que você deseja<br>criptografar ou descriptografar.</p>
+                </div>
+                <div>
+                    <button id="btn-copy" onclick="copyText()">Copiar</button>
+                </div>
+                <div class="aside-footer">
+                    <div class="socialmedia-logo">
+                        <a href="https://www.instagram.com/profdomdev/" target="_blank">
+                            <img src="assets/img/instagram80x80.png" alt="Logotipo do Instagram" />
+                        </a>
+                    </div>
+
+                    <div class="socialmedia-logo">
+                        <a href="https://www.youtube.com/channel/UC9cGKfFU0ZG-TvNLbfYUTEg" target="_blank">
+                            <img src="assets/img/logoyoutube.jpg" alt="Logotipo do youtube" />
+                        </a>
+                    </div>
+
+                    <div class="socialmedia-logo">
+                        <a href="https://www.linkedin.com/in/douglas-ramos-dev" target="_blank">
+                            <img src="assets/img/linkedin.png" alt="Logotipo do Linkedin" />
+                        </a>
+                    </div>
+                    <div class="socialmedia-logo">
+                        <a href="https://github.com/douginfodev" target="_blank">
+                            <img src="assets/img/logogit.png" alt="Logo do repositorio GitHub" />
+                        </a>
+                    </div>
+                </div>
             </aside>
+
         </main>
 
         <footer>
-            <!-- <div class="socialmedia-logo"> 
-                <a href="https://www.instagram.com/profdomdev/" target="_blank">
-                    <img src="assets/img/instagram80x80.png" alt="Logotipo do Instagram" />
-                </a>
-            </div>
-
-            <div class="socialmedia-logo">
-                <a href="https://www.youtube.com/channel/UC9cGKfFU0ZG-TvNLbfYUTEg" target="_blank">
-                    <img src="assets/img/logoyoutube.jpg" alt="Logotipo do youtube" />
-                </a>
-            </div>
-
-            <div class="socialmedia-logo">
-                <a href="https://www.linkedin.com/in/douglas-ramos-dev" target="_blank">
-                    <img src="assets/img/linkedin.png" alt="Logotipo do Linkedin" />
-                </a>
-            </div>
-            <div class="socialmedia-logo">
-                <a href="https://github.com/douginfodev" target="_blank">
-                    <img src="assets/img/logogit.png" alt="Logo do repositorio GitHub" />
-                </a>
-            </div>-->
-
-            <h1>FOOTER</h1>  
+            <h1>ONE - Oracle One Education - Challenge 01 by Douglas Ramos prof. DOM/> - 23/01/2024</prof.></h1>
         </footer>
     </div>
     <script src="assets/js/challenge01.js"></script>

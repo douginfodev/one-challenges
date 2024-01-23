@@ -7,7 +7,7 @@
 }
 
 :root {
-    --margin-default: 8px;
+    --margin-default: 3px;
     --radius-default: 10px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -39,12 +39,21 @@ button {
     color: #99ffd8;
     margin: var(--margin-default);
     cursor: pointer;
+    border: none;
     background-image: url('../img/buttoncolor.png');
 }
 
-.btn-unchecked {
+.btn-unchecked,
+#btn-copy {
     border-color: #32b670;
-    background-image: url('../img/bck-layout.png');
+    background-image: url('../img/bck_teal.png');
+}
+
+#btn-copy {
+   display: none; 
+   margin-bottom: 10px;
+   background-image: url('../img/bck_teal.png');
+
 }
 
 h1 {
@@ -60,16 +69,17 @@ textarea {
     font-weight: 400;
     padding: 10px;
     line-height: 32px;
-    background-image: url('../img/bck-layout.png');
+    background-image: url('../img/bck-black.png');
     margin: var(--margin-default);
     border-radius: var(--radius-default);
     text-transform: lowercase;
+    border-color: #32b670;
 }
 
 .container {
-    width: 100%;
+    width: 99%;
     height: auto;
-    background-image: url('../img/bck-layout.png');
+    background-image: url('../img/bck-gray.png');
 
 }
 
@@ -77,10 +87,9 @@ main {
     border-radius: var(--radius-default);
     display: flex;
     width: 100%;
-    height: 975px;
+    height: 875px;
     padding: 15px;
     margin: var(--margin-default);
-    background-image: url('../img/bck-black.png');
     margin-bottom: 0px;
 }
 
@@ -88,18 +97,18 @@ section {
     border-radius: var(--radius-default);
     display: flex;
     flex-direction: column;
-    width: 1550px;
-    height: 952px;
+    width: 1495px;
+    height: 850px;
     margin: var(--margin-default);
 }
 
 header-section {
     display: flex;
-    width: 1540px;
+    width: 1490px;
     height: 60px;
     margin: var(--margin-default);
     border-radius: var(--radius-default);
-    background-image: url('../img/bck-cards.png');
+    background-image: url('../img/bck-black.png');
     margin-top: 0;
 }
 
@@ -123,10 +132,9 @@ section-main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1540px;
+    width: 1490px;
     height: 800px;
-    background-image: url('../img/bck-layout.png');
-    margin: var(--margin-default);
+    background-image: url('../img/bck-black.png');   margin: var(--margin-default);
     border-radius: var(--radius-default);
 }
 
@@ -134,9 +142,9 @@ footer-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1540px;
+    width: 1490px;
     height: 92px;
-    background-image: url('../img/bck-cards.png');
+    background-image: url('../img/bck-gray.png');
     margin: var(--margin-default);
     border-radius: var(--radius-default);
 }
@@ -144,29 +152,31 @@ footer-section {
 #aside {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 400px;
-    height: 980px;
+    width: 350px;
+    height: 850px;
     padding: 10px;
-    background-image: url('../img/Ruido.png');
+    color: white;
+    background-image: url('../img/bck-black.png');
     border-radius: var(--radius-default);
 }
 
 #aside-text {
     display: none;
     width: 96%;
-    height: auto;
+    height: inherit;
     padding: 8px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     text-align: justify;
     font-size: 1.6rem;
     font-weight: 400;
     font-family:  'Roboto', sans-serif;
     margin: var(--margin-default);
     border-radius: var(--radius-default);
-    background-image: url('../img/bck-cards.png');
+   background-image: url('../img/bck-black.png');
     color: white;
+    margin-bottom: 15px;
 }
 
 #aside-center {
@@ -176,6 +186,9 @@ footer-section {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: white;
 }
 
 .asideh2{
@@ -183,7 +196,24 @@ footer-section {
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: var(--margin-default);
+    color: white;
 }
+
+.aside-footer {
+    display: flex;
+    width: inherit;
+    height: auto;
+    justify-content: space-around;
+    align-items: end;
+    padding: 10px;
+}
+
+.aside-footer img{
+    width: 70%;
+    height: auto;
+}
+
+
 
 aside p{    
     font-weight: 400;
@@ -194,11 +224,16 @@ aside p{
 
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     border-radius: var(--radius-default);
     width: 100%;
-    height: 50px;
-    padding: 15px;
+    height: 15px;
+    padding: 5px;
     margin: var(--margin-default);
     background-image: url('../img/bck-black.png');
+}
+
+footer h1{
+  font-size: 1.0rem;
+  font-weight: 700;  
 }
