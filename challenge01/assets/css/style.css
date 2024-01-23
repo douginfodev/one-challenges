@@ -59,9 +59,11 @@ textarea {
     font-size: 1.6rem;
     font-weight: 400;
     padding: 10px;
+    line-height: 32px;
     background-image: url('../img/bck-layout.png');
     margin: var(--margin-default);
     border-radius: var(--radius-default);
+    text-transform: lowercase;
 }
 
 .container {
