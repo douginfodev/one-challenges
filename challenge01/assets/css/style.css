@@ -23,6 +23,7 @@ a:link {
 body {
     font-size: 62.5%;
     border-radius: var(--radius-default);
+    color: white;
 }
 
 button {
@@ -50,6 +51,7 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.8rem;
     text-decoration: none;
+    text-align: center;
 }
 
 textarea {
@@ -60,14 +62,6 @@ textarea {
     background-image: url('../img/bck-layout.png');
     margin: var(--margin-default);
     border-radius: var(--radius-default);
-}
-
-.brand {
-    width: 120px;
-    height: 48px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
 }
 
 .container {
@@ -98,12 +92,29 @@ section {
 }
 
 header-section {
+    display: flex;
     width: 1540px;
     height: 60px;
     margin: var(--margin-default);
     border-radius: var(--radius-default);
     background-image: url('../img/bck-cards.png');
     margin-top: 0;
+}
+
+.brand {
+    width: 120px;
+    height: 48px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    display: flex;
+    width: 1300px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
 }
 
 section-main {
