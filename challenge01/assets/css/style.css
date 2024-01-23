@@ -141,17 +141,35 @@ footer-section {
     border-radius: var(--radius-default);
 }
 
-aside {
+#aside {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 400px;
     height: 980px;
+    padding: 10px;
     background-image: url('../img/Ruido.png');
     border-radius: var(--radius-default);
 }
 
-.aside-center {
+#aside-text {
+    display: none;
+    width: 96%;
+    height: auto;
+    padding: 8px;
+    border: 1px solid white;
+    text-align: justify;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family:  'Roboto', sans-serif;
+    margin: var(--margin-default);
+    border-radius: var(--radius-default);
+    background-image: url('../img/bck-cards.png');
+    color: white;
+}
+
+#aside-center {
     display: flex;
     width: inherit;
     height: auto;

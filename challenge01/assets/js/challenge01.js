@@ -3,17 +3,29 @@ const cripto = ['e', 'i', 'a', 'o', 'u'];
 const decripto = ['enter', 'imes', 'ai', 'ober', 'ufat'];
 
 let textoCompleto = document.getElementById('textareainfo');
+let aside = document.getElementById('aside');
+let asideCenter   = document.getElementById('aside-center');
+let asideTexto    = document.getElementById('aside-text');
+
 let textoLimpo = '';
 
 function checkText(tipo) {
     switch (tipo) {
         case 'D':
+            aside.style.display = 'flex';
+            aside.style.justifyContent = 'start';
+            asideCenter.style.display = 'none';
+            asideTexto.style.display  = 'flex';
             textoLimpo = Characters(textoCompleto.value);
-            console.log(descriptografar(textoLimpo));
+            asideTexto.innerHTML = descriptografar(textoLimpo);
             break;
         case 'E':
+            aside.style.display = 'flex';
+            aside.style.justifyContent = 'start';
+            asideCenter.style.display = 'none';
+            asideTexto.style.display  = 'flex';
             textoLimpo = Characters(textoCompleto.value);
-            console.log(criptografar(textoLimpo));
+            asideTexto.innerHTML = criptografar(textoLimpo);
             break;
     }
 }
