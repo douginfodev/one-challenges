@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <meta name="Description" content="ONE - Oracle Next Education - Turma 6 - Challenge 1 - Encriptador de Texto">
+    <meta name="Description" content="ONE - Oracle Next Education - Turma 6 - Challenge 01 - Encriptador de Texto">
     <meta name="author" content="Douglas Ramos - github.com/douginfodev">
     <meta name="robots" content="index,follow">
 </head>
@@ -19,22 +19,22 @@
                 <header-section>
                     <div class="brand">
                         <a href="index.html">
-                            <h1 class="logo">ALURA</h1>
+                            <h1 order="1"><strong>ALURA</strong></h1>
                         </a>
                     </div>
                     <div class="titulo">
-                        <h1>ENCRIPTADOR / DESCRIPTADOR DE TEXTOS</h1>
+                        <h1 order="1">ENCRIPTADOR / DESCRIPTADOR DE TEXTOS</h1>
                     </div>
                 </header-section>
 
                 <section-main>
-                    <textarea id="textareainfo" placeholder="Digite seu texto para encriptografar ou descriptografar"
+                    <textarea order="1" id="textareainfo" placeholder="Digite seu texto para encriptografar ou descriptografar"
                         rows="20" cols="110" value="" autofocus></textarea>
                 </section-main>
 
                 <footer-section>
-                    <button onclick="checkText('E')">Criptografar</button>
-                    <button class="btn-unchecked" onclick="checkText('D')">Descriptografar</button>
+                    <button onclick="checkText('E')" title="Criptografar">Criptografar</button>
+                    <button class="btn-unchecked" onclick="checkText('D')" title="Descriptografar">Descriptografar</button>
                 </footer-section>
             </section>
 
@@ -44,7 +44,7 @@
                 <div id="aside-center">
                     <img src="assets/img/Hqprodutos.png" alt="" />
                     <h2 class="asideh2">Nenhuma mensagem encontrada.</h2>
-                    <p>Digite o texto que você deseja<br>criptografar ou descriptografar.</p>
+                    <p>Digite o texto que você deseja criptografar ou descriptografar.</p>
                 </div>
                 <div>
                     <button id="btn-copy" onclick="copyText()">Copiar</button>
@@ -52,24 +52,24 @@
                 <div class="aside-footer">
                     <div class="socialmedia-logo">
                         <a href="https://www.instagram.com/profdomdev/" target="_blank">
-                            <img src="assets/img/instagram80x80.png" alt="Logotipo do Instagram" />
+                            <img src="assets/img/instagram80x80.png" alt="Link" title="instagram.com/profdomdev" />
                         </a>
                     </div>
 
                     <div class="socialmedia-logo">
                         <a href="https://www.youtube.com/channel/UC9cGKfFU0ZG-TvNLbfYUTEg" target="_blank">
-                            <img src="assets/img/logoyoutube.jpg" alt="Logotipo do youtube" />
+                            <img src="assets/img/logoyoutube.jpg" alt="Link" title="youtube.com/@profdomdev"/>
                         </a>
                     </div>
 
                     <div class="socialmedia-logo">
                         <a href="https://www.linkedin.com/in/douglas-ramos-dev" target="_blank">
-                            <img src="assets/img/linkedin.png" alt="Logotipo do Linkedin" />
+                            <img src="assets/img/linkedin.png" alt="Link" title="linkedin.com/in/douglas-ramos-dev" />
                         </a>
                     </div>
                     <div class="socialmedia-logo">
                         <a href="https://github.com/douginfodev" target="_blank">
-                            <img src="assets/img/logogit.png" alt="Logo do repositorio GitHub" />
+                            <img src="assets/img/logogit.png" alt="Link" title="github.com/douginfodev" />
                         </a>
                     </div>
                 </div>

@@ -15,25 +15,25 @@ textoCompleto.focus;
 function checkText(tipo) {
     switch (tipo) {
         case 'D':
-            buttonCopy.style.display = 'flex';
-            buttonCopy.style.justifyContent = 'end';
-            aside.style.display = 'flex';
-            aside.style.justifyContent = 'start';
-            asideCenter.style.display = 'none';
-            asideTexto.style.display = 'flex';
+            changeStyle();
             textoLimpo = Characters(textoCompleto.value);
             asideTexto.innerHTML = descriptografar(textoLimpo);
             break;
         case 'E':
-            buttonCopy.style.display = 'flex';
-            aside.style.display = 'flex';
-            aside.style.justifyContent = 'start';
-            asideCenter.style.display = 'none';
-            asideTexto.style.display = 'flex';
+            changeStyle();
             textoLimpo = Characters(textoCompleto.value);
             asideTexto.innerHTML = criptografar(textoLimpo);
             break;
     }
+}
+
+function changeStyle() {
+    buttonCopy.style.display = 'flex';
+    buttonCopy.style.justifyContent = 'center';
+    aside.style.display = 'flex';
+    aside.style.justifyContent = 'start';
+    asideCenter.style.display = 'none';
+    asideTexto.style.display = 'flex';
 }
 
 function criptografar(texto) {
