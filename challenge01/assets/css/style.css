@@ -36,11 +36,12 @@ button {
     align-items: center;
     width: 328px;
     height: 67px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: 400;
     text-decoration: none;
     border-radius: var(--border-radius);
-    color: #99ffd8;
+    color: white;
+    text-transform: uppercase;
     margin: var(--margin-space);
     cursor: pointer;
     border: none;
@@ -82,8 +83,11 @@ textarea {
 }
 
 .container {
+    margin:0 auto;
     width: 99%;
     height: auto;
+    max-width: 1900px;
+    min-width: 320px;
     background-image: url('../img/bck_graydark.png');
 
 }
@@ -177,15 +181,18 @@ footer-section {
     width: 96%;
     height: inherit;
     padding: 8px;
-    text-align: justify;
+    text-align: left;
+    text-wrap: wrap;
+    white-space: normal;
     font-size: 1.6rem;
     font-weight: 400;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto);
     margin: var(--margin-space);
     border-radius: var(--border-radius);
-    background-image: url('../img/bck-black.png');
     color: white;
     margin-bottom: 15px;
+    border: 2px solid #99ffd8;
+    background-image: url('../img/bck-black.png');
 }
 
 #aside-center {

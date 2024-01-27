@@ -15,14 +15,24 @@ textoCompleto.focus;
 function checkText(tipo) {
     switch (tipo) {
         case 'D':
-            changeStyle();
-            textoLimpo = Characters(textoCompleto.value);
-            asideTexto.innerHTML = descriptografar(textoLimpo);
+            if (textoCompleto.value != "") {
+                changeStyle();
+                textoLimpo = Characters(textoCompleto.value);
+                asideTexto.innerHTML = descriptografar(textoLimpo);
+            } else {
+                textoCompleto.focus;
+                alert('Favor digitar o texto');
+            }
             break;
         case 'E':
-            changeStyle();
-            textoLimpo = Characters(textoCompleto.value);
-            asideTexto.innerHTML = criptografar(textoLimpo);
+            if (textoCompleto.value != "") {
+                changeStyle();
+                textoLimpo = Characters(textoCompleto.value);
+                asideTexto.innerHTML = criptografar(textoLimpo);
+            } else {
+                textoCompleto.focus;
+                alert('Favor digitar o texto');
+            }
             break;
     }
 }
@@ -70,11 +80,16 @@ function Characters(content) {
 }
 
 function copyText() {
-    let clipText = document.getElementById("aside-text").innerHTML;
+    textoCompleto.value = "";
+    let clipText = document.getElementById("aside-text");
     navigator.clipboard
-        .writeText(clipText)
+        .writeText(clipText.innerHTML)
         .then(() => {
+            clipText.style.display = "none";
+            buttonCopy.style.display = 'none';
+            asideCenter.style.display = "flex";
             alert("Texto Copiado");
+            textoCompleto.focus;
         }
         );
 }
