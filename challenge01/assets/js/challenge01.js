@@ -9,9 +9,21 @@ let aside = document.getElementById('aside');
 let buttonCopy = document.getElementById('btn-copy');
 let asideCenter = document.getElementById('aside-center');
 let asideTexto = document.getElementById('aside-text');
-textoCompleto.focus;
+let headSection = document.getElementById('header-section');
+let footerSection = document.getElementById('footer-section');
+let capa = document.getElementById('capa');
+ 
 
-// FUNCTION
+//FUNCTION
+function init(){
+   headSection.style.display   = "flex";
+   footerSection.style.display = "flex";
+   aside.style.display = "flex";
+   capa.style.display  = "none";
+   textoCompleto.style.display = "flex";
+   textoCompleto.focus;
+}
+
 function checkText(tipo) {
     switch (tipo) {
         case 'D':
