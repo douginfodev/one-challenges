@@ -17,6 +17,8 @@
     /* COLOR */
     --button-color: #32b670;
     --text-result:  #32b670;
+
+    font-size: 62.5%; 
 }
 
 a:link {
@@ -47,7 +49,7 @@ button {
     align-items: center;
     width: 328px;
     height: 67px;
-    font-size: 1.4rem;
+    font-size: 2.0rem;
     font-weight: 400;
     text-decoration: none;
     border-radius: var(--border-radius);
@@ -82,7 +84,7 @@ h1 {
 
 textarea {
     font-family: var(--font-roboto);
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     font-weight: 400;
     padding: 10px;
     line-height: 32px;
@@ -100,9 +102,7 @@ textarea {
     height: auto;
     min-width: 320px;
     max-width: 1902px;
-    /* background-image: url('../img/bck_graydark.png'); */
     background-color: #1c1d22;
-
 }
 
 main {
@@ -143,15 +143,16 @@ section {
     border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
-    width: 1495px;
+     width: 82%;
     height: 850px;
     margin: var(--margin-space);
+    background-image: url('../img/bck-buttons.png');
 }
 
 header-section,
 #header-section{
     display: flex;
-    width: 1480px;
+    width: 98.5%;
     height: 60px;
     margin: var(--margin-space);
     border-radius: var(--border-radius);
@@ -169,23 +170,25 @@ header-section,
 }
 
 .brand a h1{
-    font-size: 2.0rem;
+    font-size: 2.6rem;
     font-weight: 700;
 }
 
-.titulo {
+.titulo h1{
     display: flex;
     width: 1300px;
     height: 60px;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-size: 2.6rem;
 }
 
 section-main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1490px;
+    width: 98.5%;
     height: 800px;
     margin: var(--margin-space);
     border-radius: var(--border-radius);
@@ -195,22 +198,24 @@ footer-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1490px;
+    width: 98.5%;
     height: 92px;
     margin: var(--margin-space);
     border-radius: var(--border-radius);
 }
 
+aside,
 #aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 330px;
+    width: 18%;
+    min-width: 330px;
     height: 850px;
     padding: 10px;
     color: white;
-    background-image: url('../img/bck-black.png');
+    background-image: url('../img/bck-cards.png');
     border-radius: var(--border-radius);
 }
 
@@ -235,13 +240,13 @@ footer-section {
 
 #aside-center {
     display: flex;
-    width: inherit;
+    width: 98%;
     height: auto;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: white;
 }
 
@@ -256,7 +261,7 @@ footer-section {
 
 #aside-center p {
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     text-align: center;
     text-wrap: wrap;
     margin-bottom: var(--margin-space);
@@ -265,7 +270,7 @@ footer-section {
 
 aside .aside-footer {
     display: flex;
-    width: inherit;
+    width: 98%;
     height: auto;
     justify-content: space-around;
     align-items: end;
@@ -303,4 +308,64 @@ footer {
 footer h1 {
     font-size: 1.0rem;
     font-weight: 400;
+}
+
+@media only screen
+and (max-width: 992px){
+    header-section,
+    #header-section{    
+     flex-direction: column;
+     height: auto;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+}
+
+section,main{
+    height: 955px;
+}
+
+.titulo h1{
+    /* font-size: 1.8rem; */
+    text-align: start;
+}
+}
+
+@media only screen
+and (max-width: 600px){
+    header-section,
+    #header-section{  
+       background-image: url('../img/bck-cards.png');
+       text-wrap: wrap;
+       white-space: normal;
+       text-align: center;
+    } 
+
+    main{
+        flex-direction: column;   
+        align-items: center;  
+        height: 1480px;
+
+    }
+
+    section-main #textareainfo{
+        font-size: 2.4rem;
+        height: 400px;
+    }
+
+    section,
+    aside,
+    #aside{
+        width: 100%;
+    }
+
+    .asideh2,#aside-center p,footer h1{
+        font-size: 2.8rem;
+    }
+
+    section{
+        height: 600px; 
+    }
+    
+    
 }
