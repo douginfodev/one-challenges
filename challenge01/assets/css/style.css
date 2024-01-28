@@ -146,7 +146,7 @@ section {
      width: 82%;
     height: 850px;
     margin: var(--margin-space);
-    background-image: url('../img/bck-buttons.png');
+    background-image: url('../img/bck_graydark.png');
 }
 
 header-section,
@@ -215,7 +215,7 @@ aside,
     height: 850px;
     padding: 10px;
     color: white;
-    background-image: url('../img/bck-cards.png');
+    background-image: url('../img/bck-black.png');
     border-radius: var(--border-radius);
 }
 
@@ -333,6 +333,10 @@ section,main{
 
 @media only screen
 and (max-width: 600px){
+
+    .container{
+        height:auto;
+    }
     header-section,
     #header-section{  
        background-image: url('../img/bck-cards.png');
@@ -364,7 +368,7 @@ and (max-width: 600px){
     }
 
     section{
-        height: 600px; 
+        height: 650px; 
     }
     
     
