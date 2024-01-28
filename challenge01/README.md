@@ -1,7 +1,7 @@
 # ONE - ORACLE NEXT EDUCATION - CHALLENGE 01
 SPRINT 01: Construa um decodificador em javascript
 
-# OBJETIVOS DO CHALLENGE
+# 1 - OBJETIVOS DO CHALLENGE
 Criar uma aplicação que criptografa textos, para trocar mensagens secretas, com outras pessoas que saibam o segredo da criptografia.
 
 As "chaves" de criptografia que utilizaremos são:<br>
@@ -11,13 +11,13 @@ A letra "a" é convertida para "ai"<br>
 A letra "o" é convertida para "ober"<br>
 A letra "u" é convertida para "ufat"
 
-# TELAS DA APLICAÇÃO
+# 2 - TELAS DA APLICAÇÃO
 <div class="telas">
     <img src="assets/img/capaaplicacao.jpg" alt="">
     <img src="assets/img/tela_principal.jpg" alt="">
 </div>
 
-# REQUISITOS
+# 3 - REQUISITOS
 <div class="requisitos">
     <ol>
       <li>Deve funcionar apenas com letras minúsculas</li>
@@ -26,7 +26,7 @@ A letra "u" é convertida para "ufat"
     </ol>
 </div>
 
-# EXTRAS
+# 4 - EXTRAS
 <div class="extras">
     <ol>
       <li>Um botão que copie o texto criptografado/descriptografado para a área de transferência - ou seja, que tenha a mesma funcionalidade do ctrl+C ou da opção "copiar" do menu dos aplicativos</li>
