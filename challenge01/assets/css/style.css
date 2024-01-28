@@ -339,10 +339,9 @@ and (max-width: 600px){
     }
     header-section,
     #header-section{  
-       background-image: url('../img/bck-cards.png');
-       text-wrap: wrap;
        white-space: normal;
        text-align: center;
+       font-size: 1.4rem;
     } 
 
     main{
