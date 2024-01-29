@@ -16,22 +16,28 @@
 
     /* COLOR */
     --button-color: #32b670;
-    --text-result:  #32b670;
+    --text-result: #32b670;
+    --text-color: white;
 
-    font-size: 62.5%; 
+    /* kacground-image */
+    --darkgray: url('../img/bck_graydark.png');
+    --bck-black: url('../img/bck-black.png');
+    --btn-teal: url('../img/bck_teal.png');
+
+    font-size: 62.5%;
 }
 
 a:link {
     text-decoration: none;
-    color: #32b670;
+    color: var(--text-result);
 }
 
-a:visited{
-    color: #32b670;
+a:visited {
+    color: var(--text-result);
 }
 
-a:hover{
-    color: #32b670;
+a:hover {
+    color: var(--text-result);
 }
 
 body {
@@ -39,7 +45,7 @@ body {
     font-size: 62.5%;
     font-family: var(--font-roboto);
     border-radius: var(--border-radius);
-    color: white;
+    color: var(--text-color);
     background-color: #353536;
 }
 
@@ -53,7 +59,7 @@ button {
     font-weight: 400;
     text-decoration: none;
     border-radius: var(--border-radius);
-    color: white;
+    color: var(--text-color);
     text-transform: uppercase;
     margin: var(--margin-space);
     cursor: pointer;
@@ -63,15 +69,15 @@ button {
 
 .btn-unchecked,
 #btn-copy {
-    border-color: #32b670;
-    background-image: url('../img/bck_teal.png');
+    border-color: var(--text-result);
+    background-image: var(--btn-teal);
 }
 
 #btn-copy {
     display: none;
     width: 290px;
     margin-bottom: 10px;
-    background-image: url('../img/bck_teal.png');
+    background-image: var(--btn-teal);
 
 }
 
@@ -88,20 +94,21 @@ textarea {
     font-weight: 400;
     padding: 10px;
     line-height: 32px;
-    background-image: url('../img/bck-black.png');
+    background-image: var(--bck-black);
     margin: var(--margin-space);
     border-radius: var(--border-radius);
     text-transform: lowercase;
-    border-image:  url('../img/bck-gray.png');
-    color: white;
+    border-image: url('../img/bck-gray.png');
+    color: var(--text-color);
 }
 
 .container {
-    margin:0 auto;
+    margin: 0 auto;
     width: 99.5%;
     height: auto;
     min-width: 320px;
     max-width: 1902px;
+    background-image: var(--darkgray);
     background-color: #1c1d22;
 }
 
@@ -116,7 +123,7 @@ main {
     background-color: #1c1d22;
 }
 
-#capa{
+#capa {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -125,13 +132,13 @@ main {
     align-items: center;
 }
 
-.capa-info{
+.capa-info {
     width: inherit;
-    height:auto;
+    height: auto;
     margin: var(--margin-space);
 }
 
-.capa-button{
+.capa-button {
     display: flex;
     justify-content: center;
     width: inherit;
@@ -143,20 +150,20 @@ section {
     border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
-     width: 82%;
+    width: 82%;
     height: 850px;
     margin: var(--margin-space);
-    background-image: url('../img/bck_graydark.png');
+    background-image: var(--darkgray);
 }
 
 header-section,
-#header-section{
+#header-section {
     display: flex;
     width: 98.5%;
     height: 60px;
     margin: var(--margin-space);
     border-radius: var(--border-radius);
-    background-image: url('../img/bck-black.png');
+    background-image: var(--bck-black);
     background-color: black;
     margin-top: 0;
 }
@@ -169,12 +176,12 @@ header-section,
     align-items: center;
 }
 
-.brand a h1{
+.brand a h1 {
     font-size: 2.6rem;
     font-weight: 700;
 }
 
-.titulo h1{
+.titulo h1 {
     display: flex;
     width: 1300px;
     height: 60px;
@@ -214,8 +221,8 @@ aside,
     min-width: 330px;
     height: 850px;
     padding: 10px;
-    color: white;
-    background-image: url('../img/bck-black.png');
+    color: var(--text-color);
+    background-image: var(--bck-black);
     border-radius: var(--border-radius);
 }
 
@@ -235,7 +242,7 @@ aside,
     color: #99ffd8;
     margin-bottom: 15px;
     border: 2px solid #99ffd8;
-    background-image: url('../img/bck-black.png');
+    background-image: var(--bck-black);
 }
 
 #aside-center {
@@ -247,7 +254,7 @@ aside,
     align-items: center;
     margin-top: 100px;
     margin-bottom: 30px;
-    color: white;
+    color: var(--text-color);
 }
 
 .asideh2 {
@@ -256,7 +263,7 @@ aside,
     text-align: center;
     text-wrap: wrap;
     margin-bottom: var(--margin-space);
-    color: white;
+    color: var(--text-color);
 }
 
 #aside-center p {
@@ -265,7 +272,7 @@ aside,
     text-align: center;
     text-wrap: wrap;
     margin-bottom: var(--margin-space);
-    color: white;
+    color: var(--text-color);
 }
 
 aside .aside-footer {
@@ -302,7 +309,8 @@ footer {
     padding-right: 15px;
     margin: var(--margin-space);
     background-image: url('../img/bck-layout.png');
-    background-color: aqua;
+    background-color: #353536;
+;
 }
 
 footer h1 {
@@ -310,65 +318,65 @@ footer h1 {
     font-weight: 400;
 }
 
-@media only screen
-and (max-width: 992px){
+@media only screen and (max-width: 992px) {
+
     header-section,
-    #header-section{    
-     flex-direction: column;
-     height: auto;
-     text-align: center;
-     justify-content: center;
-     align-items: center;
-}
-
-section,main{
-    height: 955px;
-}
-
-.titulo h1{
-    /* font-size: 1.8rem; */
-    text-align: start;
-}
-}
-
-@media only screen
-and (max-width: 600px){
-
-    .container{
-        height:auto;
+    #header-section {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
-    header-section,
-    #header-section{  
-       white-space: normal;
-       text-align: center;
-       font-size: 1.4rem;
-    } 
 
-    main{
-        flex-direction: column;   
-        align-items: center;  
+    section,
+    main {
+        height: 955px;
+    }
+
+    .titulo h1 {
+        text-align: start;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        height: auto;
+    }
+
+    header-section,
+    #header-section {
+        white-space: normal;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
         height: 1480px;
 
     }
 
-    section-main #textareainfo{
+    section-main #textareainfo {
         font-size: 2.4rem;
         height: 400px;
     }
 
     section,
     aside,
-    #aside{
+    #aside {
         width: 100%;
     }
 
-    .asideh2,#aside-center p,footer h1{
+    .asideh2,
+    #aside-center p,
+    footer h1 {
         font-size: 2.8rem;
     }
 
-    section{
-        height: 650px; 
+    section {
+        height: 650px;
     }
-    
-    
 }
