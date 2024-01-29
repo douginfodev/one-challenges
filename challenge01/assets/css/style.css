@@ -1,32 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --margin-space: 3px;
-    --border-radius: 10px;
-    --font-roboto: 'Roboto', sans-serif;
-
-    --border-radius: 16px;
-    --margin-space: 6px;
-
-    /* COLOR */
-    --button-color: #32b670;
-    --text-result: #32b670;
-    --text-color: white;
-
-    /* kacground-image */
-    --darkgray: url('../img/bck_graydark.png');
-    --bck-black: url('../img/bck-black.png');
-    --btn-teal: url('../img/bck_teal.png');
-
-    font-size: 62.5%;
-}
-
 a:link {
     text-decoration: none;
     color: var(--text-result);
@@ -310,7 +283,6 @@ footer {
     margin: var(--margin-space);
     background-image: url('../img/bck-layout.png');
     background-color: #353536;
-;
 }
 
 footer h1 {
