@@ -15,20 +15,6 @@ let capa = document.getElementById('capa');
 let container = document.getElementById('container');
 let buttonMode = document.getElementById('site-mode-img');
 
-
-$ = document.querySelector.bind(document);
-$$ = document.querySelectorAll.bind(document);
-print = console.log.bind(console)
-
-// selecionando o elemento
-let elemento = ".container";
-
-let largura = $(elemento).clientWidth;
-let altura = $(elemento).clientHeight;
-
-print(largura, altura);  // 120 777
-
-
 //FUNCTION
 function init() {
     headSection.style.display = "flex";
@@ -38,7 +24,6 @@ function init() {
     textoCompleto.style.display = "flex";
     textoCompleto.focus;
     checkWebStorage();
-    //buttonMode.style.backgroundImage = 'url(../img/dark.png)';
 }
 
 function changeSiteMode() {

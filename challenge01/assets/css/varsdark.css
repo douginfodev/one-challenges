@@ -68,3 +68,28 @@ button:hover{
 footer h1 {
     color: var(--button-color);
 }
+
+#aside-center,
+h2.asideh2,
+#aside-center p {
+    color: var(--text-result);
+}
+
+.capa-logo{
+    background-image: url('../img/capa.png');
+}
+
+#capa{
+ border: 2px solid var(--button-color-border);
+ background-color: var(--text-result);
+}
+
+.capa-titulo h1,
+footer h1{
+    color: var(--text-color-inative);
+    text-transform: uppercase;
+}
+
+body{
+    background-color: var(--body-color);
+  }

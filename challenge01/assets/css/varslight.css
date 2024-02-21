@@ -33,7 +33,7 @@
     --main-color: #f3f5fc;
     --body-color: #efefef;
 
-    
+
     /* background-image */
     --darkgray: url('../img/bck_graydark.png');
     --bck-black: url('../img/bck-black.png');
@@ -61,18 +61,48 @@ button {
     background-color: var(--button-color);
 }
 
-.btn-unchecked{
+.btn-unchecked {
     background-color: var(--button-color-inative);
     color: var(--text-color-inative);
 }
 
 .btn-unchecked:hover,
-#btn-copy:hover{
-    color: var(--button-color-hover); 
-    background-color: var(--button-color); 
+#btn-copy:hover {
+    color: var(--button-color-hover);
+    background-color: var(--button-color);
 }
 
-button:hover{
+button:hover {
     background-color: var(--button-color-inative);
     color: var(--button-color-hover);
+    border-color: #6badfe;
+}
+
+footer h1 {
+    color: var(--text-color-button);
+}
+
+#aside-center,
+h2.asideh2,
+#aside-center p {
+    color: var(--text-color);
+}
+
+.capa-logo{
+    background-image: url('../img/capalight.png');
+}
+
+#capa{
+ border: 2px solid var(--button-color-border);
+ background-color: var(--button-color-inative);
+}
+
+.capa-titulo h1,
+footer h1{
+    color: var(--aside-color);
+    text-transform: uppercase;
+}
+
+body{
+  background-color: var(--button-color-inative);
 }

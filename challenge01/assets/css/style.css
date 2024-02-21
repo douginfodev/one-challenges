@@ -17,7 +17,6 @@ body {
     font-family: var(--font-roboto);
     border-radius: var(--border-radius);
     color: var(--text-color);
-    background-color: var(--body-color);
 }
 
 .btn-unchecked,
@@ -53,6 +52,7 @@ textarea {
     border-color: var(--button-color-border);
     background-color: var(--textarea-color);
     color: var(--text-result);
+    resize: none;
 }
 
 button {
@@ -98,10 +98,16 @@ main {
 #capa {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 40%;
     height: auto;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+}
+
+.capa-logo {
+    width: 500px;
+    height: 250px;
 }
 
 .capa-info {
@@ -239,7 +245,6 @@ aside,
     align-items: center;
     margin-top: 100px;
     margin-bottom: 30px;
-    color: var(--text-color);
 }
 
 .asideh2 {
@@ -248,7 +253,6 @@ aside,
     text-align: center;
     text-wrap: wrap;
     margin-bottom: var(--margin-space);
-    color: var(--text-color);
 }
 
 #aside-center p {
@@ -257,7 +261,6 @@ aside,
     text-align: center;
     text-wrap: wrap;
     margin-bottom: var(--margin-space);
-    color: var(--text-color);
 }
 
 aside .aside-footer {
@@ -297,9 +300,8 @@ footer {
 }
 
 footer h1 {
-    font-size: 1.0rem;
-    font-weight: 400;
-    color: var(--text-color-button);
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 992px) {
@@ -362,5 +364,13 @@ footer h1 {
 
     section {
         height: 650px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .container {
+        height: auto;
+        min-width: 320px;
     }
 }
