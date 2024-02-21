@@ -13,10 +13,11 @@ let headSection = document.getElementById('header-section');
 let footerSection = document.getElementById('footer-section');
 let capa = document.getElementById('capa');
 let container = document.getElementById('container');
+let buttonMode = document.getElementById('site-mode-img');
 
 
-$ = document.querySelector.bind(document); 
-$$ = document.querySelectorAll.bind(document); 
+$ = document.querySelector.bind(document);
+$$ = document.querySelectorAll.bind(document);
 print = console.log.bind(console)
 
 // selecionando o elemento
@@ -26,16 +27,46 @@ let largura = $(elemento).clientWidth;
 let altura = $(elemento).clientHeight;
 
 print(largura, altura);  // 120 777
-  
- 
+
+
 //FUNCTION
-function init(){
-   headSection.style.display   = "flex";
-   footerSection.style.display = "flex";
-   aside.style.display = "flex";
-   capa.style.display  = "none";
-   textoCompleto.style.display = "flex";
-   textoCompleto.focus;
+function init() {
+    headSection.style.display = "flex";
+    footerSection.style.display = "flex";
+    aside.style.display = "flex";
+    capa.style.display = "none";
+    textoCompleto.style.display = "flex";
+    textoCompleto.focus;
+    checkWebStorage();
+    //buttonMode.style.backgroundImage = 'url(../img/dark.png)';
+}
+
+function changeSiteMode() {
+    let actualMode = localStorage.getItem("modescreen");
+    
+
+    if (actualMode === 'dark'){
+        console.log(actualMode);
+        localStorage.setItem("modescreen","light");
+        buttonMode.style.backgroundImage = 'url(../img/ligth.png)';
+    }
+    else
+    {
+        localStorage.setItem("modescreen","dark");
+        buttonMode.style.backgroundImage = 'url(../img/dark.png)';
+        console.log(actualMode);
+    }
+   
+    location.reload();
+}
+
+function checkWebStorage() {
+
+    if (typeof (Storage) !== "undefined")
+        return true;
+
+    return false;
+
 }
 
 function checkText(tipo) {

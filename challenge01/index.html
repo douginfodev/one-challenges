@@ -5,7 +5,29 @@
     <title>ONE - Oracle Next Education - Turma 6</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/vars.css">
+    <script>
+        let modeScreen = localStorage.getItem("modescreen");
+        let mode = '';
+        
+        if (modeScreen === null){
+            localStorage.setItem("modescreen","light");
+            mode = localStorage.getItem("modescreen");
+        }else{
+            mode = localStorage.getItem("modescreen");
+        }
+
+        verifyCSSMode(mode);  
+
+        function verifyCSSMode(modeType){
+      
+          if (modeType === 'dark')
+            document.writeln('<link rel="stylesheet" type="text/css" href="assets/css/varsdark.css">')
+          else 
+            document.writeln('<link rel="stylesheet" type="text/css" href="assets/css/varslight.css">');  
+        }
+
+        
+    </script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <meta name="Description" content="ONE - Oracle Next Education - Turma 6 - Challenge 01 - Encriptador de Texto">
     <meta name="author" content="Douglas Ramos - github.com/douginfodev">
@@ -25,6 +47,9 @@
                     </div>
                     <div class="titulo">
                         <h1 order="1">CODIFICADOR - DECODIFICADOR DE TEXTOS</h1>
+                    </div>
+                    <div class="site-mode" id="site-mode-img" onclick="changeSiteMode()">
+                        <!-- img screenMode -->
                     </div>
                 </header-section>
 
@@ -90,7 +115,7 @@
         </main>
 
         <footer>
-            <h1>ONE - Oracle One Education - Challenge 01 by Douglas Ramos prof. DOM/> - 23/01/2024</prof.></h1>
+            <h1>ONE - Oracle One Education - Challenge 01 by Douglas Ramos prof. DOM/> - 23/01/2024</h1>
         </footer>
     </div>
     <script src="assets/js/challenge01.js"></script>

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --margin-space: 3px;
+    --border-radius: 10px;
+    --font-roboto: 'Roboto', sans-serif;
+
+    --border-radius: 16px;
+    --margin-space: 6px;
+
+    /* COLOR */
+    --button-color: #32b670;
+    --button-color-hover: #32b670;
+    --text-result: #4cd08a;
+    --text-color: yellow;
+
+    /* COLOR */
+    --button-color: #32b670;
+    --button-color-image: url('../img/bck_teal.png');
+    --button-color-inative: #b8fee1;
+    --button-color-border: #236441;
+    --button-color-image-inative: url('../img/buttoncolor.png');
+    --text-color-button: white;
+    --text-color-inative: #1f4831;
+
+
+
+    --aside-color: black;
+    --header-color: black;
+    --textarea-color: black;
+    --main-color: #2a2c33;
+    --body-color: black;
+
+    /* kacground-image */
+    --darkgray: url('../img/bck_graydark.png');
+    --bck-black: url('../img/bck-black.png');
+    --btn-teal: url('../img/bck_teal.png');
+    --screen-mode: url('../img/dark.png');
+
+    font-size: 62.5%;
+}
+
+
+.btn-unchecked{
+    background-color: var(--button-color-inative);
+    color: var(--text-color-inative);
+}
+
+.btn-unchecked:hover,
+#btn-copy:hover{
+    color: var(--text-color-button); 
+    background-color: var(--button-color); 
+    border: 1px solid white;
+}
+
+button:hover{
+    background-color: var(--button-color-inative);
+    color: var(--text-result);
+    border: 1px solid var(--text-result);
+}
+
+footer h1 {
+    color: var(--button-color);
+}
