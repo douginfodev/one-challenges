@@ -8,9 +8,6 @@
 
 :root {
     --margin-space: 3px;
-    --border-radius: 10px;
-    --font-roboto: 'Roboto', sans-serif;
-
     --border-radius: 16px;
     --margin-space: 6px;
 
@@ -33,13 +30,15 @@
     --main-color: #f3f5fc;
     --body-color: #efefef;
 
-
     /* background-image */
     --darkgray: url('../img/bck_graydark.png');
     --bck-black: url('../img/bck-black.png');
     --btn-teal: url('../img/bck_teal.png');
     --screen-mode: url('../img/ligth.png');
 
+    /* FONT */
+    --font-roboto: 'Roboto', sans-serif;
+    font-family: var(--font-roboto);
     font-size: 62.5%;
 }
 
