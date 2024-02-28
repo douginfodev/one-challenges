@@ -13,8 +13,8 @@ A letra "u" é convertida para "ufat"
 
 # 2 - TELAS DA APLICAÇÃO
 <div class="telas">
-    <img src="assets/img/capaaplicacao.jpg" alt="">
-    <img src="assets/img/tela_principal.jpg" alt="">
+    <img src="challenge01/assets/img/capaaplicacao.jpg" alt="">
+    <img src="challenge01/assets/img/tela_principal.jpg" alt="">
 </div>
 
 # 3 - REQUISITOS
