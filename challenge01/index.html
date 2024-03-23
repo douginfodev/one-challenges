@@ -8,25 +8,24 @@
     <script>
         let modeScreen = localStorage.getItem("modescreen");
         let mode = '';
-        
-        if (modeScreen === null){
-            localStorage.setItem("modescreen","light");
+
+        if (modeScreen === null) {
+            localStorage.setItem("modescreen", "light");
             mode = localStorage.getItem("modescreen");
-        }else{
+        } else {
             mode = localStorage.getItem("modescreen");
         }
 
-        verifyCSSMode(mode);  
+        verifyCSSMode(mode);
 
-        function verifyCSSMode(modeType){
-      
-          if (modeType === 'dark')
-            document.writeln('<link rel="stylesheet" type="text/css" href="assets/css/varsdark.css">')
-          else 
-            document.writeln('<link rel="stylesheet" type="text/css" href="assets/css/varslight.css">');  
+        function verifyCSSMode(modeType) {
+
+            const urlCss = '<link rel="stylesheet" type="text/css" href="assets/css/';
+
+            if (modeType === 'dark' ? document.writeln(urlCss + 'varsdark.css">') : document.writeln(urlCss + 'varslight.css">'));
         }
 
-        
+
     </script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <meta name="Description" content="ONE - Oracle Next Education - Turma 6 - Challenge 01 - Encriptador de Texto">
@@ -54,24 +53,25 @@
                 </header-section>
 
                 <section-main>
-                    <textarea tabindex="0" id="textareainfo" placeholder="Digite seu texto para codificar ou decodificar;"
-                        rows="20" cols="150" style="display:none;" autofocus></textarea>
+                    <textarea tabindex="0" id="textareainfo"
+                        placeholder="Digite seu texto para codificar ou decodificar;" rows="20" cols="150"
+                        style="display:none;" autofocus></textarea>
                     <div id="capa" class="capamobile">
                         <div class="capa-logo">
-                          <!-- <img id="onelogo" src="assets/img/capalight.png" alt="Alura Challenges" /> -->
+                            <!-- <img id="onelogo" src="assets/img/capalight.png" alt="Alura Challenges" /> -->
                         </div>
                         <div class="capa-titulo">
-                          <h1>SPRINT 01: Construa um decodificador em javascript</h1>
+                            <h1>SPRINT 01: Construa um decodificador em javascript</h1>
                         </div>
-                        <div tabindex="0" class="capa-button">
-                          <button onclick="init()" title="Entrar">ENTRAR</button>
+                        <div class="capa-button">
+                            <button tabindex="0" id="btn-enter" onclick="init()" title="Entrar">ENTRAR</button>
                         </div>
-                    </div>    
+                    </div>
                 </section-main>
 
                 <footer-section id="footer-section" style="display: none;">
-                    <button tabindex="0" onclick="checkText('E')">codificar</button>
-                    <button tabindex="0" class="btn-unchecked" onclick="checkText('D')">decodificar</button>
+                    <button id="btn-code" tabindex="0" onclick="checkText('E')">codificar</button>
+                    <button id="btn-decode" tabindex="0" class="btn-unchecked" onclick="checkText('D')">decodificar</button>
                 </footer-section>
             </section>
 
@@ -95,7 +95,7 @@
 
                     <div tabindex="0" class="socialmedia-logo">
                         <a href="https://www.youtube.com/channel/UC9cGKfFU0ZG-TvNLbfYUTEg" target="_blank">
-                            <img src="assets/img/logoyoutube.jpg" alt="Link" title="youtube.com/@profdomdev"/>
+                            <img src="assets/img/logoyoutube.jpg" alt="Link" title="youtube.com/@profdomdev" />
                         </a>
                     </div>
 
@@ -106,7 +106,8 @@
                     </div>
                     <div tabindex="0" class="socialmedia-logo">
                         <a href="https://github.com/douginfodev" target="_blank">
-                            <img src="assets/img/logogit.png" alt="Link" title="github.com/douginfodev" style="background-color: black;" />
+                            <img src="assets/img/logogit.png" alt="Link" title="github.com/douginfodev"
+                                style="background-color: black;" />
                         </a>
                     </div>
                 </div>

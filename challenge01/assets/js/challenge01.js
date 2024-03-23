@@ -6,16 +6,39 @@ let textoLimpo = '';
 // DOM
 let textoCompleto = document.getElementById('textareainfo');
 let aside = document.getElementById('aside');
-let buttonCopy = document.getElementById('btn-copy');
 let asideCenter = document.getElementById('aside-center');
 let asideTexto = document.getElementById('aside-text');
 let headSection = document.getElementById('header-section');
 let footerSection = document.getElementById('footer-section');
 let capa = document.getElementById('capa');
 let container = document.getElementById('container');
+
+let buttonEnter = document.getElementById('btn-enter');
+let buttonCode = document.getElementById('btn-code');
+let buttonDecode = document.getElementById('btn-decode');
+let buttonCopy = document.getElementById('btn-copy');
 let buttonMode = document.getElementById('site-mode-img');
 
-//FUNCTION
+//Event Listerners
+buttonEnter.addEventListener("keydown", function (event) {
+    if (event.key === 'Enter' || event.code === 'Space' ? init() : null);
+ });
+
+buttonCode.addEventListener("keydown", function (event) {
+   if (event.key === 'Enter' || event.code === 'Space' ? criptografar() : null);
+});
+
+buttonDecode.addEventListener("keydown", function (event) {
+    if (event.key === 'Enter' || event.code === 'Space' ? descriptografar() : null);
+ });
+
+ 
+ buttonCopy.addEventListener("keydown", function (event) {
+    if (event.key === 'Enter' || event.code === 'Space' ? copyText() : null);
+ });
+ 
+ window.onload = buttonEnter.focus;
+
 function init() {
     headSection.style.display = "flex";
     footerSection.style.display = "flex";
