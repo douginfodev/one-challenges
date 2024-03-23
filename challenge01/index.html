@@ -40,12 +40,12 @@
         <main>
             <section>
                 <header-section id="header-section" style="display: none;">
-                    <div class="brand">
+                    <div tabindex="0" class="brand">
                         <a href="index.html">
                             <h1 order="1"><strong>ALURA</strong></h1>
                         </a>
                     </div>
-                    <div class="titulo">
+                    <div tabindex="0" class="titulo">
                         <h1>CODIFICADOR - DECODIFICADOR DE TEXTOS</h1>
                     </div>
                     <div class="site-mode" id="site-mode-img" onclick="changeSiteMode()">
@@ -54,7 +54,7 @@
                 </header-section>
 
                 <section-main>
-                    <textarea order="1" id="textareainfo" placeholder="Digite seu texto para codificar ou decodificar;"
+                    <textarea tabindex="0" id="textareainfo" placeholder="Digite seu texto para codificar ou decodificar;"
                         rows="20" cols="150" style="display:none;" autofocus></textarea>
                     <div id="capa" class="capamobile">
                         <div class="capa-logo">
@@ -63,48 +63,48 @@
                         <div class="capa-titulo">
                           <h1>SPRINT 01: Construa um decodificador em javascript</h1>
                         </div>
-                        <div class="capa-button">
+                        <div tabindex="0" class="capa-button">
                           <button onclick="init()" title="Entrar">ENTRAR</button>
                         </div>
                     </div>    
                 </section-main>
 
                 <footer-section id="footer-section" style="display: none;">
-                    <button onclick="checkText('E')">codificar</button>
-                    <button class="btn-unchecked" onclick="checkText('D')">decodificar</button>
+                    <button tabindex="0" onclick="checkText('E')">codificar</button>
+                    <button tabindex="0" class="btn-unchecked" onclick="checkText('D')">decodificar</button>
                 </footer-section>
             </section>
 
             <aside id="aside" style="display: none;">
-                <div id="aside-text">
+                <div tabindex="0" id="aside-text">
                 </div>
-                <div id="aside-center">
+                <div tabindex="0" id="aside-center">
                     <img src="assets/img/Hqprodutos.png" alt="Imagem - Nenhuma mensagem encontrada" />
                     <h2 class="asideh2">Nenhuma mensagem encontrada.</h2>
                     <p>Digite o texto que você deseja codificar ou decodificar.</p>
                 </div>
                 <div>
-                    <button id="btn-copy" onclick="copyText()">copiar</button>
+                    <button tabindex="0" id="btn-copy" onclick="copyText()">copiar</button>
                 </div>
                 <div class="aside-footer">
-                    <div class="socialmedia-logo">
+                    <div tabindex="0" class="socialmedia-logo">
                         <a href="https://www.instagram.com/profdomdev/" target="_blank">
                             <img src="assets/img/instagram80x80.png" alt="Link" title="instagram.com/profdomdev" />
                         </a>
                     </div>
 
-                    <div class="socialmedia-logo">
+                    <div tabindex="0" class="socialmedia-logo">
                         <a href="https://www.youtube.com/channel/UC9cGKfFU0ZG-TvNLbfYUTEg" target="_blank">
                             <img src="assets/img/logoyoutube.jpg" alt="Link" title="youtube.com/@profdomdev"/>
                         </a>
                     </div>
 
-                    <div class="socialmedia-logo">
+                    <div tabindex="0" class="socialmedia-logo">
                         <a href="https://www.linkedin.com/in/douglas-ramos-dev" target="_blank">
                             <img src="assets/img/linkedin.png" alt="Link" title="linkedin.com/in/douglas-ramos-dev" />
                         </a>
                     </div>
-                    <div class="socialmedia-logo">
+                    <div tabindex="0" class="socialmedia-logo">
                         <a href="https://github.com/douginfodev" target="_blank">
                             <img src="assets/img/logogit.png" alt="Link" title="github.com/douginfodev" style="background-color: black;" />
                         </a>
