@@ -54,8 +54,12 @@ public class App {
             novaConversao = Character.toUpperCase(aux);
         }
 
-        System.out.println("*******************************************");
-        System.out.println("OBRIGADO POR UTILIZAR O CONVERSOR DE MOEDAS");
+        System.out.println("************************");
+        System.out.println("OBRIGADO POR UTILIZAR O "); 
+        System.out.println("CONVERSOR DE MOEDAS.    ");
+        System.out.println("                        ");
+        System.out.println("PROGRAMA ONE 2024       ");
+        System.out.println("PROGRAMA ONE 2024       ");
         System.out.println("*******************************************");
     }
 

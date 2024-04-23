@@ -19,10 +19,10 @@ public class RenderScreen {
     }
 
     public void generateMenu() {
-        System.out.println("===============================");
-        System.out.println("      CONVERSOR DE MOEDAS      ");
-        System.out.println("===============================");
-        System.out.println("            MENU               ");
+        System.out.println("===========================");
+        System.out.println("    CONVERSOR DE MOEDAS    ");
+        System.out.println("===========================");
+        System.out.println("         MENU              ");
         System.out.println("1 = REAL  -> DOLAR");
         System.out.println("2 = REAL  -> EURO");
         System.out.println("3 = DOLAR -> REAL");
@@ -62,12 +62,15 @@ public class RenderScreen {
     }
 
     public void printConversion(double value1, double value2) {
-        System.out.println("===============================");
+        System.out.println("===========================");
         System.out.println("      VALOR = "+value1);
-        System.out.println("-------------------------------");
-        System.out.println("      VALOR CONVERTIDO         ");
-        System.out.print(this.currency + value1 + " --> ");
-        System.out.println(this.currencyConverted + value2);
-        System.out.println("===============================");
+        System.out.println("---------------------------");
+        System.out.println("      VALOR CONVERTIDO     ");
+        System.out.print(this.currency+" = ");
+        System.out.printf("%.2f %n",value1);
+        System.out.println(" || ");
+        System.out.print(this.currencyConverted+" = ");
+        System.out.printf("%.2f %n",value2);
+        System.out.println("===========================");
     }
 }
