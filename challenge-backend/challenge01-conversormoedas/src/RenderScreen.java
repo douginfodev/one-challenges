@@ -1,29 +1,58 @@
 public class RenderScreen {
-    private int opcoes; 
+    private String currency;
+    private String currencyConverted;
 
-    //CONSTRUCTOR
-    public RenderScreen(int opcoes){
-       this.opcoes = opcoes; 
+    public String getCurrencyConverted() {
+        return currencyConverted;
     }
 
-    public int getOpcoes() {
-        return opcoes;
+    public void setCurrencyConverted(String currencyConverted) {
+        this.currencyConverted = currencyConverted;
     }
 
-    public void setOpcoes(int opcoes) {
-        this.opcoes = opcoes;
+    public String getCurrency() {
+        return currency;
     }
 
-    public void generateMenu(){
-        int totalOpcoes = getOpcoes();
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
 
+    public void generateMenu() {
         System.out.println("===============================");
         System.out.println("      CONVERSOR DE MOEDAS      ");
         System.out.println("===============================");
-        System.out.println(" SELECIONE UMA OPÇÃO");
-        for(int numopcoes = 1; numopcoes <= totalOpcoes; numopcoes++){
-            System.out.println("1 = REAL -> DOLAR");
-            System.out.println("2 = REAL -> EURO");
+        System.out.println("            MENU               ");
+        System.out.println("1 = REAL  -> DOLAR");
+        System.out.println("2 = REAL  -> EURO");
+        System.out.println("3 = DOLAR -> EURO");
+        System.out.println("SELECIONE UMA OPÇÃO");
+    }
+
+    public void selectConversion(int option) {
+        switch (option) {
+            case 1:
+                this.currency = "REAL (R$)";
+                this.currencyConverted = "DOLAR (US$)";
+                break;
+            case 2:
+                this.currency = "REAL (R$)"; 
+                this.currencyConverted = "EURO (E$)";
+                break;
+            case 3:
+                this.currency = "DOLAR (US$)"; 
+                this.currencyConverted = "EURO (E$)";
+                break;    
         }
+    }
+
+    public void printConversion(double value1, double value2) {
+        System.out.println("===============================");
+        System.out.println("      VALOR = "+value1);
+        System.out.println("-------------------------------");
+        System.out.println("      VALOR CONVERTIDO         ");
+        System.out.print(this.currency + value1 + " --> ");
+        System.out.println(this.currencyConverted + value2);
+        System.out.println("===============================");
     }
 }
