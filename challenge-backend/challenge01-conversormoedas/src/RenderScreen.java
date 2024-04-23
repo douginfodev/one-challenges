@@ -39,38 +39,38 @@ public class RenderScreen {
                 this.currencyConverted = "DOLAR (US$)";
                 break;
             case 2:
-                this.currency = "REAL (R$)"; 
+                this.currency = "REAL (R$)";
                 this.currencyConverted = "EURO (€$)";
                 break;
             case 3:
-                this.currency = "DOLAR (US$)"; 
+                this.currency = "DOLAR (US$)";
                 this.currencyConverted = "REAL (R$)";
-                break; 
+                break;
             case 4:
                 this.currency = "DOLAR (US$)";
                 this.currencyConverted = "EURO (€$)";
                 break;
             case 5:
-                this.currency = "EURO (€$)"; 
+                this.currency = "EURO (€$)";
                 this.currencyConverted = "REAL (R$)";
                 break;
             case 6:
-                this.currency = "EURO (€$)"; 
+                this.currency = "EURO (€$)";
                 this.currencyConverted = "DOLAR (US$)";
-                break;        
+                break;
         }
     }
 
     public void printConversion(double value1, double value2) {
-        System.out.println("===========================");
-        System.out.println("      VALOR = "+value1);
-        System.out.println("---------------------------");
-        System.out.println("      VALOR CONVERTIDO     ");
-        System.out.print(this.currency+" = ");
-        System.out.printf("%.2f %n",value1);
+        System.out.println("========================");
+        System.out.println("      VALOR = " + value1);
+        System.out.println("------------------------");
+        System.out.println("    VALOR CONVERTIDO    ");
+        System.out.print(this.currency + " = ");
+        System.out.printf("%.2f %n", value1);
         System.out.println(" || ");
-        System.out.print(this.currencyConverted+" = ");
-        System.out.printf("%.2f %n",value2);
-        System.out.println("===========================");
+        System.out.print(this.currencyConverted + " = ");
+        System.out.printf("%.2f %n", value2);
+        System.out.println("========================");
     }
 }
