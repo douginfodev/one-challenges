@@ -25,7 +25,10 @@ public class RenderScreen {
         System.out.println("            MENU               ");
         System.out.println("1 = REAL  -> DOLAR");
         System.out.println("2 = REAL  -> EURO");
-        System.out.println("3 = DOLAR -> EURO");
+        System.out.println("3 = DOLAR -> REAL");
+        System.out.println("4 = DOLAR -> EURO");
+        System.out.println("5 = EURO  -> REAL");
+        System.out.println("6 = EURO  -> DOLAR");
         System.out.println("SELECIONE UMA OPÇÃO");
     }
 
@@ -37,12 +40,24 @@ public class RenderScreen {
                 break;
             case 2:
                 this.currency = "REAL (R$)"; 
-                this.currencyConverted = "EURO (E$)";
+                this.currencyConverted = "EURO (€$)";
                 break;
             case 3:
                 this.currency = "DOLAR (US$)"; 
-                this.currencyConverted = "EURO (E$)";
-                break;    
+                this.currencyConverted = "REAL (R$)";
+                break; 
+            case 4:
+                this.currency = "DOLAR (US$)";
+                this.currencyConverted = "EURO (€$)";
+                break;
+            case 5:
+                this.currency = "EURO (€$)"; 
+                this.currencyConverted = "REAL (R$)";
+                break;
+            case 6:
+                this.currency = "EURO (€$)"; 
+                this.currencyConverted = "DOLAR (US$)";
+                break;        
         }
     }
 
